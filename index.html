@@ -3,53 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OTT 모음</title>
+    <style>
+        * {margin: 10; padding: 10; box-sizing:border-box;}
+        ul, li, ol {list-style:none; margin:0; padding:0;}
+
+        #ott {width:1050px; height:550px;  margin:0 auto; border:2px solid gray;}
+        #ott > h3 {
+    font-size: 30px;
+    color: #4CAF50; /* 부드러운 녹색으로 변경 */
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: 'Arial', sans-serif; /* 부드러운 폰트 사용 */
+    font-weight: bold; /* 두꺼운 글씨 */
+    text-transform: uppercase; /* 대문자로 변환 */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+}
+
+#ott > p {
+    font-size: 18px;
+    color: #333; /* 좀 더 어두운 색 */
+    text-align: center;
+    line-height: 1.5;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 300; /* 얇은 글씨로 부드럽게 */
+    letter-spacing: 1px; /* 글자 간격을 조금 더 띄움 */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* 가벼운 그림자 */
+}
+
+        #ott > h4{font-size: 18px; color: gray; text-align:left; margin-left: 24px; letter-spacing: 5px;}
+        #ott > a > .box {width: 300px; height: 320px; float: left; margin: 10px 24px; padding: 10px; border: 1px solid #ddd;}
+        #ott > a > .box:hover {box-shadow: 4px 4px 4px #666;}
+        #ott > a > .box > img {width: 100%; height: 200px;}
+        #ott > a > .box > h4 {font-size: 20px; color: #000;}
+        #ott > a > .box > p {font-size: 12px; color: #666;}
+
+        #movie{width:1050px; height:550px;  margin:0 auto; border:2px solid gray;}
+        #movie > h4{font-size: 18px; color: gray; text-align:left; margin-left: 24px; letter-spacing: 5px;}
+        #movie > a > .box {width: 300px; height: 320px; float: left; margin: 10px 24px; padding: 10px; border: 1px solid #ddd;}
+        #movie > a > .box:hover {box-shadow: 4px 4px 4px #666;}
+        #movie > a > .box > img {width: 100%; height: 200px;}
+        #movie > a > .box > h4 {font-size: 20px; color: #000;}
+        #movie > a > .box > p {font-size: 12px; color: #666;}
+    </style>
 </head>
 <body>
-    <h1>HTML5 학습</h1>
-    <a href="https://www.w3.org/">W3C</a>
-    <a href="https://www.w3schools.com/">W3Schools</a>
-    <a href="https://developer.mozilla.org/ko/">MDN</a>
-    <br>
-    <h2>나의 소개</h2>
-    <ul>
-        <li>이름: 김정현</li>
-        <li>별명:유니코</li>
-        <li>관심기술:HTML5</li>
-        <li>취미:스티커모으기</li>
-    </ul> 
-    <table border="1">
-        <caption style=" font-size: 20px; font-weight: bold;"><b>올해 재미있게 읽은 책</b></caption>
-            <tr>
-                <th>제목</th>
-                <th>장르</th>
-            </tr>
-            <tr>
-                <td>용의자 X의 헌신</td>
-                <td>추리</td>
-            </tr>
-            <tr>
-                <td>연금술사</td>
-                <td>소설</td>
-            </tr>
-            <tr>
-                <td>숨결이 바람 될 때때</td>
-                <td>에세이</td>
-            </tr>
-    </table> <br>
-    <b>자랑하고싶은 우리동네의 아름다운 곳</b>
-    <br>
-    <p>세빛섬(플로팅 아일랜드, Floating island)는 2006년 서울 시민 김은성씨의 제안으로 서울시에서 수익형 민자사업(BTO)으로 만든 인공섬이다. 비스타(Vista), 비바(Viva), 테라(Terra)의 3개로 나뉘어 있다.</p>
-    <figure>
-        <img src="img/tree.jpg" alt="세빛섬" style="width: 450px; height: 270px;">
-        <figcaption>서울의 한강에 있는 세빛섬</figcaption>
-    </figure>
-    <br>
-    <figure>
-        <video width="450" height="270" controls>
-            <source src="video/dog.mp4" type="video/mp4">
-        </video><br>
-        <em>이 문서는 김정현에 의해 HTML5와 CSS3 기술을 사용하여 2020년 1월 3일에 작성하였습니다 (ver 1.0)</em> 
-    </figure>
+    <div id="ott">
+        <h3>OTT 모음집</h3>
+        <p>다양한 OTT를 한번에 만나보세요.</p>
+        <h4>사용자 생성 플랫폼(UGC) 플랫폼</h4>
+        <a href="http://www.youtube.kr">
+            <div class="box">
+                <img src="data:image/png;base64,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" alt="유튜브">
+                <h4>유튜브(Youtube)</h4>
+                <p>세계의 음악, 동영상, 방송을 한번에</p>
+            </div>
+        </a>
+        <a href="https://chzzk.naver.com/">
+            <div class="box">
+                <img src="data:image/png;base64,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" alt="치지직">
+                <h4>치지직(CHZZK)</h4>
+                <p>네이버 CHZZK. 지금, 스트리밍이 시작됩니다.</p>
+            </div>
+        </a>
+        <a href="https://www.sooplive.co.kr/">
+            <div class="box">
+                <img src="data:image/png;base64,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" alt="아프리카(soop)">
+                <h4>숲코리아(SOOP)</h4>
+                <p>대한민국의 1인 미디어,인터넷 방송,SNS 플랫폼</p>
+            </div>
+        </a>
+    </div>
+    <div id = "movie">
+        <h4>전문 제작 콘텐츠(PGC) 플랫폼</h4>
+        <a href="https://www.netflix.com/">
+            <div class="box">
+                <img src="data:image/jpeg;base64,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" alt="넷플릭스">
+                <h4>넷플릭스(netflix)</h4>
+                <p>Netflix Originals를 제공하는 스트리밍 플랫폼</p>
+            </div>
+        </a>
+        <a href="https://www.tving.com/">
+            <div class="box">
+                <img src="data:image/png;base64,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" alt="티빙">
+                <h4>티빙(Tving)</h4>
+                <p>CJ ENM이 운영하는 OTT 스트리밍 플랫폼</p>
+            </div>
+        </a>
+        <a href="https://watcha.com/">
+            <div class="box">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAMAAzAMBEQACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABwEEBQYIAgP/xABDEAACAQMBAwcIBQoHAQAAAAAAAQIDBBEFBgcTEhQhMWFxoUFRU4GRkrHBIjJSwtEXIzNDVWJjcuHiJEJFVIKi0hX/xAAbAQEAAgMBAQAAAAAAAAAAAAAAAQcEBQYCA//EADERAQABAwIEBQMDAwUAAAAAAAABAgMEEVEFBhITITFBYZFxobFCUsEWIoEkMmLh8f/aAAwDAQACEQMRAD8A1whbwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANYAagAAAAAAAAAAAAAAAAAAAAAAAAABLdNjti7baHTKl5cXdei4zcEqajh47yYcxxbjd3DyO3RTE/VsH5K9P/AGld+7H8A1v9UZP7I+5+SvT/ANpXfux/AH9UZP7I+6j3Wacv9Ru/dj+AP6oyv2R90fbQ2FLStZurGhVnVp0JclSnjOcdgdVw7Irycem7XGkzsxpDOAAAAAAAAAAAAAAAAAAAAAAAEybrYY2Upyx9atUfiTCveYZ/10x7R+G4BowDzKSisvqQHPOtV3dave1855deb9WSFp4Nvt41un2j8LMMsAAAAAAAAAAAAAAAAAAAAAAdgRKb93VPh7I2P7ylLxJVtxqrXOufVsoasAsNauY2mk3txN4jSoyk36g+2NR136aY9Zhz10vpby/OQteI08AJAAAAAAAAAAEzo98Kr6Kfusavn3aN4+Tg1vRT91jWE92jePk4Nb0U/dY1g7tG8fKjp1EsyhJd6aBF2mfDV5D2AeownL6sJPuWR4PE3KYnSZV4Nb0U/dY1g7tG8fI6VVLLpzS7YseB3aN4+Xju6g9ROqjCU9bFU+FsppkP4K+JKr+J1dWZcn3ZsMEA1feNcc22RvsdLqKNP3pJPwDa8Et9zOo9v4QmQskAAAAAAAAAAGXFqSeHHpJeblPVTNLobTub3lhbXMaNPFWlGf1V5VkKpvdVFyqmZ8pXPN6HoafuIPn1VbnN6HoafuIHVVuxG1VhSudndSpQpwUpUJ8lqKznBLKwL00ZVEzPhrCB10pM8rSAJl3aWNOnsrbznTjJ1pznmUc+XHyPSuuO3przqoifJtXN6HoafuIhqOqrd8byxoXFpWo8Gn9ODj9VeVB6t3aqK4qifJzzXpOhXqUZZ5VObg/U8ELWs19y3Fe8PD8vcHuXQezsOHoWnw81vD4IlVWXV1ZFc+8siGOowI/3vXXI0qxtVLEqtw5tedRj+MkTLpeWLXVkV3No/KLDy7kAAAAAAAAAADWe8CcN311zrZOxbeXTi6b9TJVpxm12s6uN/H5bIGsAPjcQVSjVptZU4teBKaZ6aonZzrXpcC4rUn0cOcoY7nghbFmvrt01bw+b6Ew+s+Sf9l7fmuz2nUWsONvBteZtZ+YVXn3O5lXK95llQxVJdQRKCdt7TmW1N/SxiMp8SK7JLJCyuCXu7hUTt4MGlmSXnaQbOvwh0Xp8OHYW1P7NKK8ESqa5Otcz7rgPCjAibe5d8TXLO08lG2c/XOT/APKEu15WtaWa7m8x9mikOpAAAAAAAAAAAST4wlPdFdcvTLy1k/0VblJdjQcLzNainIpuR6wkBdQc2qAwBAO1lurXaTUqKWFGu37en5hZvCrk3MO3VOzG0KErm5pW8PrVZxgu9vAZl+vt26q9omXRlKCpwjCKSUVhYJlU8zrOu76EIUl1ARNvctFS1mzukklXoOLfncX+EkJdrytdmbNdvafy0ihFzr0orrlNLxIdJfnpt1VbRLo+C5MEl5FglU3nL0BRgQdvDuedbX33mpONNepL55ErE4Ba7eDT7+LXSG6AAAAAAAAAAABu+6a64Wv3Fs+qvQz64v8AqTDmeZ7XVj03Np/KXI9QcPCoACF951DgbVVZYxGrSjNPtxhkS77lyvqwtNpli9jrfnO1WlUn/uFU93MvukwzeMXO3g3J9tPlPa6ArRUABo29uzdbZ+hdR67a4WX+7JY+PJJdBy1e6MyaP3R+PFF+jQ4msafD7V1SXtmkRHm7POnTEuT/AMZ/DohBVioHmTUU2+pdYNNfBzzrNd3Wr3tw+niV5vxC08G328eijaIWZDLAAAAAAAAAAABm9irvmW1WnVHLEZVeHLtUlj4tEw1fGrXdwq42jX4TwgrVUABFm+C25N9p9wv89OUPY8/MS7Hla7/bct/5Y7dXb8baji8nMaNvKWfM20l4Nhl8y3OnDineUxrqDgnmU4xa5UksvCywnR6TAxG19l/9DZvULZJOcqLcM/aXSvFIMzh97s5Vuv3QxslT4+0+kx8nOoS9jz8h6rA4tMU4N36J+j1BWaoFhrVyrXSr2u3jh0ZPPqJfbGo7l6iiPWXPWXJuUnlvpZ5WvEaRoBIAAAAAAAAAAAPdKrOhWp1qTxUpzU496efkHi7RFyiaJ8p8HRdpWjcW1KtB5jUgpRfY0epVNXTNNU0z6TL7EPIBoG96hytHsrhLLp3XIfYpRb+6iXR8sXOnKqo3hYbnrb87qN0/NCmvF/Mhlc0XPG3R9ZSa+oOSaFvPv+aVdFxJx5F1xX3Rxn4kug4Djxei9Ex+nT5b1SlyoqXkksoOfmNJ0VqxU4ShLqksEJidJ1QxstZStt4lvaOP6G5q+xRk18iI83ecSvdzhE17xCaY9RLglQNX3i3Kt9k73+LimvWyW04Lb7mdR8/CEzysoAAAAAAAAAAAAABOuwl1zrZLTZdbhRVJ/wDH6PwSJVjxW12s25T76/LPhrwDVt5FB19j73krppOFTp7JrPhkS23A7nRnUe/h9ljuntlS2cnWws1q8n7Oj5Bk8yXJqzenaIbs+oNAife9XVXWLK29HbuWP5pf2iXacr29LFdW86fCRNmLp3mz+nXEscqpbwbx58dPiHK51vtZVyjaZZRhio/pWCob2OLGP0Z0JVvXycP4j1dHORNfBIpnzirT+UgLqDnFQI/3vXDhpVlbRfTVr8przpL8Wh6Ol5YtdWRVXPpH5RWQ7kAAAAAAAAAAAAABLO6W64mh3FtnLo128eZSRLguZbPRlxVvDel1BzyoGP12zeoaNe2UUnKvQnBd7XQH2xrvZvUXNpWuyOn1dJ0Czs68IxrQj+cUXlZbD7cQyYycqq7T5SzLDDQpvKuOLtfdQ9DCnT/68r7wnzWBy7b6cGJ3mZb3utuVX2Up0s5dtWqU363yvvBzXMFroz6p3iJ/j+G4NZQaRYz0uhPVqWqNPnNOjKjFp9HJbTfR6iX1i9VFqbX6ZnVfJYRD4x5KhKJt71zxNbsrZfqbdz96X9gl2nK9vSzXc3nT4/8AWiEOqAAAAAAAAAAAAAAb7uju+Hql5aOXRVpKSXamTDlOabWtqiuPolZdQcYqBTARpqoo48oSqwifJAO1dfnO02qVOv8AxM4Z/lfJXwHqs7hVvt4VuPbX5brueum4anaPH1oVV096fwQc7zRb/vt3PbRJQcoAAKMCDt4Vy7ja/UHnKpONOPZiKz4tiVi8Bt9GBRO+s/drpDcgAAAAAAAAAAAAANh2AuuabV2Tf1ardJ9mV/QNPx213MGr20lOS6iVcqgAAHmclGLk+pLINNXOV1V491WrP9ZUlP2vIWvj0dNqmn2htm6u64G0zov9fQlH2dPyDSczWurEiraUxIODVAAeZPGc9QPVzxq1xzvVr25zni15zXc5MLUwrfbxrdG0QtCGUAAAAAAAAAAAAAA+9jcuzvre5Tf5mrGfR2MPhlW+7Zro3iXRVGaqUoTXVJJolVMxpMw9hAAAsNdrc30a+rfYt5texh98ajrvUU7zDnpeTp6cELWhl9krnmm0unVs4XGUZdz6CWu4va7uFXT7J7XWwrKFQkyBYa3cc10i+r5/R0Jtd+CX2xqJuX6aY9Zhz2vO+tnla8RpGgEgAAAAAAAAAAAAAHX0BHqnrY6759stpldy5UnbxjJ/vR+i/FMlV/EbXZy7lHv/ANszkMIyAyBru31d0Nk9QcXiUoKK9bQ9Gx4PR15tuNPVBywQs17oVHSr06seuE1Jep5D53qOu3NO8SmJ7wtApUoOVzVnNxWVCk3hk6q+p4DnVzOlH3WNxvP02DaoWd1V8zeIrxGrKo5Zyp/3VRDGXG9Ku+i20yC7alT8Ay7fK0frufEMJre3eravZVrOcLelQrLE1CLcmu9satji8v4+Pci5rMzDViG/AAAAAAAAAAAAAAAAG77KbdUtC0SGn1bOtXnTnKUXGSUUm849rZLl+J8CuZWVN6iqIiV1X3pXTb5vpdKHbUrOXgkhq+VHK1P67s/4hj6+8jX6meHzSjHycmk2/FsasujlrDp85mWMrbZ7R14tVNWqpPyQhGGPYkxqzKOCYFHlb+8sXc6nqF5FwvL+7uIvpcateUl7GxqzLWHj2Z1t0RE/SFqQygADSAAAAAAAAAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/2Q==" alt="왓챠">
+                <h4>왓챠(Watcha)</h4>
+                <p>개인의 취향에 맞춘 콘텐츠 추천에 특화된 플랫폼</p>
+            </div>
+        </a>
+    </div>
 </body>
 </html>
